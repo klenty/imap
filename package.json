@@ -1,10 +1,10 @@
 {
   "name": "@klenty/imap",
-  "version": "4.3.2",
+  "version": "1.0.0",
   "description": "Wrapper over node-imap, providing a simpler api for common use cases",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --exit",
     "lint": "jscs . && jshint .",
     "cover": "istanbul cover --report html _mocha"
   },
