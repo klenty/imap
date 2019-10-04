@@ -12,7 +12,7 @@ like to see, we're accepting pull requests!
 #### Retrieve the subject lines of all unread email
 
 ```js
-var imaps = require('imap-simple');
+var imaps = require('@klenty/imap');
 
 var config = {
     imap: {
@@ -56,7 +56,7 @@ imaps.connect(config).then(function (connection) {
 
 #### Retrieve Body Content
 ```js
-var imaps = require('imap-simple');
+var imaps = require('@klenty/imap');
 const _ = require('lodash');
 
 var config = {
@@ -88,9 +88,9 @@ imaps.connect(config).then(function (connection) {
 
 ```
 
-#### Usage of Mailparser in combination with imap-simple
+#### Usage of Mailparser in combination
 ```js
-var imaps = require('imap-simple');
+var imaps = require('@klenty/imap');
 const simpleParser = require('mailparser').simpleParser;
 const _ = require('lodash');
 
@@ -130,7 +130,7 @@ imaps.connect(config).then(function (connection) {
 #### Download all attachments from all unread email since yesterday
 
 ```js
-var imaps = require('imap-simple');
+var imaps = require('@klenty/imap');
 
 var config = {
     imap: {
@@ -190,7 +190,7 @@ imaps.connect(config).then(function (connection) {
 ### Append a message to your drafts folder
 
 ```js
-var imaps = require('imap-simple');
+var imaps = require('@klenty/imap');
 
 var config = {
     imap: {
