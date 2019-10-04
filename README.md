@@ -5,9 +5,7 @@ A library providing a simpler interface for common use cases of [node-imap][], a
 **Warning**: This library is missing a great deal of functionality from node-imap. If you have functionality you would
 like to see, we're accepting pull requests!
 
-### Note
-
-This fork of [imap-simple](https://github.com/chadxz/imap-simple) is maintained by developers at [Klenty](https://www.klenty.com).
+**Note**: This fork of [imap-simple](https://github.com/chadxz/imap-simple) is maintained by developers at [Klenty](https://www.klenty.com).
 
 ### Examples
 
@@ -278,8 +276,6 @@ times out, either the callback will be called with the `err` property set to an 
 the returned promise will be rejected with the same. Valid `options` properties are:
 
     - **imap**: Options to pass to node-imap constructor 1:1
-    - **connectTimeout**: Time in milliseconds to wait before giving up on a connection attempt. *(Deprecated: please
-    use `options.imap.authTimeout` instead)*
 
 - **errors.ConnectionTimeoutError**(<*number*> timeout) - *ConnectionTimeoutError* - Error thrown when a connection
 attempt has timed out.
