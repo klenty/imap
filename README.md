@@ -1,9 +1,13 @@
-# imap-simple
+# IMAP
 
 A library providing a simpler interface for common use cases of [node-imap][], a robust imap client for node.js.
 
 **Warning**: This library is missing a great deal of functionality from node-imap. If you have functionality you would
 like to see, we're accepting pull requests!
+
+### Note
+
+This fork of [imap-simple](https://github.com/chadxz/imap-simple) is maintained by developers at [Klenty](https://www.klenty.com).
 
 ### Examples
 
