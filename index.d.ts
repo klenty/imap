@@ -2,6 +2,8 @@
 
 import Imap = require("imap");
 
+import { EventEmitter } from "events";
+
 export interface ImapSimpleOptions {
     /** Options to pass to node-imap constructor. */
     imap: Imap.Config;
@@ -30,7 +32,7 @@ export interface Message {
     seqno: number;
 }
 
-export class ImapSimple extends NodeJS.EventEmitter {
+export class ImapSimple extends EventEmitter {
     constructor(imap: Imap);
 
     /** Open a mailbox, calling the provided callback with signature (err, boxName), or resolves the returned promise with boxName. */
